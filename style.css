@@ -328,3 +328,240 @@ body {
   font-size: 0.8rem;
   opacity: 0.5;
 }
+/* ===============================
+   RESPONSIVE STYLES
+   =============================== */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  #nav a {
+    font-size: 1.6vw;
+  }
+
+  #homemain h2 {
+    font-size: 2vw;
+  }
+
+  #homemain .headings h1 {
+    font-size: 9vw;
+  }
+
+  #homelast p {
+    font-size: 2vw;
+    width: 90%;
+  }
+
+  #fimages {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+  }
+
+  #fleft,
+  #fright {
+    width: 100%;
+    height: auto;
+  }
+
+  .slides {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .slide {
+    width: 45%;
+  }
+
+  #dev h1,
+  #dev p {
+    width: 100%;
+  }
+
+  .footer-middle {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  #nav {
+    /* flex-direction: column;
+    align-items: flex-end; */
+    gap: 15px;
+  }
+
+  #nav a {
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 4vw;
+  }
+
+  #homemain {
+    padding: 20vw 8vw;
+  }
+
+  #homemain h2 {
+    font-size: 4vw;
+  }
+
+  #homemain .headings {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #homemain .headings h1 {
+    font-size: 14vw;
+    letter-spacing: -2px;
+  }
+
+  #homelast {
+    padding: 10vw 8vw;
+  }
+
+  #homelast p {
+    font-size: 4vw;
+    width: 100%;
+  }
+
+  .fheading > h1 {
+    font-size: 6vw;
+  }
+
+  .fleftelm h1 {
+    font-size: 5vw;
+  }
+
+  .fleftelm h3 {
+    font-size: 3.5vw;
+  }
+
+  .fleftelm h4 {
+    font-size: 3vw;
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  #bottom > h1 {
+    font-size: 6vw;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 60px 5% 30px;
+  }
+
+  .footer-top h1 {
+    font-size: 2rem;
+  }
+
+  .footer-cta {
+    padding: 12px 30px;
+    font-size: 0.9rem;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+}
+/* ============================
+   Featured Section Responsive
+   ============================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  #fimages {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 50px;
+  }
+
+  #fleft,
+  #fright {
+    width: 100%;
+    height: auto;
+  }
+
+  .fleftelm h1 {
+    font-size: 3vw;
+  }
+
+  .fleftelm h3 {
+    font-size: 1.6vw;
+  }
+
+  .fleftelm h4 {
+    font-size: 1.3vw;
+  }
+
+  #fright .images {
+    width: 100%;
+    height: auto;
+  }
+
+  #fright .images img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #fimages {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #fleft {
+    order: 2; /* text comes below images */
+  }
+
+  #fright {
+    order: 1; /* images first on mobile */
+  }
+
+  .fleftelm h1 {
+    font-size: 5vw;
+    line-height: 1.2;
+  }
+
+  .fleftelm h3 {
+    font-size: 3.5vw;
+  }
+
+  .fleftelm h4 {
+    font-size: 3vw;
+  }
+
+  #fright .images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .btndiv button {
+    width: 50%;
+    font-size: 3vw;
+    padding: 12px 16px;
+  }
+  #dev p {
+    font-size: 2.5vw;
+  }
+  .slides h3 {
+    font-size: 2.5vw;
+  }
+}
