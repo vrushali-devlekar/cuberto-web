@@ -34,3 +34,41 @@ Shery.imageEffect(".images", {
     });
   },
 });
+// footer
+// Footer animation with ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to("#footer .footer-top h1", {
+  scrollTrigger: {
+    trigger: "#footer",
+    start: "top 80%",
+  },
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  ease: "power3.out",
+});
+
+gsap.to("#footer .footer-cta", {
+  scrollTrigger: {
+    trigger: "#footer",
+    start: "top 75%",
+  },
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  delay: 0.2,
+  ease: "power3.out",
+});
+
+gsap.to("#footer .footer-middle", {
+  scrollTrigger: {
+    trigger: "#footer",
+    start: "top 70%",
+  },
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  delay: 0.4,
+  ease: "power3.out",
+});
